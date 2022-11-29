@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinKiller_windowsApp", "BinKiller_windowsApp\BinKiller_windowsApp.csproj", "{1C3443EF-610A-440B-9BE4-835489D215AD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Bin_Healer", "Bin_Healer\Bin_Healer.vdproj", "{45C8F0E1-AAEB-405A-9CC0-1E451CF87079}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C3443EF-610A-440B-9BE4-835489D215AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3443EF-610A-440B-9BE4-835489D215AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3443EF-610A-440B-9BE4-835489D215AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3443EF-610A-440B-9BE4-835489D215AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C8F0E1-AAEB-405A-9CC0-1E451CF87079}.Debug|Any CPU.ActiveCfg = Debug
+		{45C8F0E1-AAEB-405A-9CC0-1E451CF87079}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA097574-0336-4344-9BF8-A13BA721A557}
+	EndGlobalSection
+EndGlobal
