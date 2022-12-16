@@ -40,7 +40,8 @@
             this.abrirAplicativoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rodarUltimoExpurgoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sendToBandeijaBtn = new System.Windows.Forms.Button();
+            this.ignoreRepositorieCkb = new System.Windows.Forms.CheckBox();
+            this.ignoreRepositories = new System.Windows.Forms.TextBox();
             this.cnmstrMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             // 
             // runBtn
             // 
-            this.runBtn.Location = new System.Drawing.Point(12, 56);
+            this.runBtn.Location = new System.Drawing.Point(12, 111);
             this.runBtn.Name = "runBtn";
             this.runBtn.Size = new System.Drawing.Size(264, 65);
             this.runBtn.TabIndex = 2;
@@ -74,7 +75,7 @@
             // infoLbl
             // 
             this.infoLbl.AutoSize = true;
-            this.infoLbl.Location = new System.Drawing.Point(12, 124);
+            this.infoLbl.Location = new System.Drawing.Point(12, 56);
             this.infoLbl.Name = "infoLbl";
             this.infoLbl.Size = new System.Drawing.Size(0, 15);
             this.infoLbl.TabIndex = 3;
@@ -124,23 +125,33 @@
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click_1);
             // 
-            // sendToBandeijaBtn
+            // ignoreRepositorieCkb
             // 
-            this.sendToBandeijaBtn.Location = new System.Drawing.Point(142, 2);
-            this.sendToBandeijaBtn.Name = "sendToBandeijaBtn";
-            this.sendToBandeijaBtn.Size = new System.Drawing.Size(134, 22);
-            this.sendToBandeijaBtn.TabIndex = 5;
-            this.sendToBandeijaBtn.Text = "Mandar para bandeija";
-            this.sendToBandeijaBtn.UseVisualStyleBackColor = true;
-            this.sendToBandeijaBtn.Visible = false;
-            this.sendToBandeijaBtn.Click += new System.EventHandler(this.sendToBandeijaBtn_Click);
+            this.ignoreRepositorieCkb.AutoSize = true;
+            this.ignoreRepositorieCkb.Location = new System.Drawing.Point(12, 56);
+            this.ignoreRepositorieCkb.Name = "ignoreRepositorieCkb";
+            this.ignoreRepositorieCkb.Size = new System.Drawing.Size(124, 19);
+            this.ignoreRepositorieCkb.TabIndex = 7;
+            this.ignoreRepositorieCkb.Text = "Ignorar repositório";
+            this.ignoreRepositorieCkb.UseVisualStyleBackColor = true;
+            this.ignoreRepositorieCkb.Visible = false;
+            this.ignoreRepositorieCkb.CheckedChanged += new System.EventHandler(this.ignoreRepositorieCkb_CheckedChanged);
+            // 
+            // ignoreRepositories
+            // 
+            this.ignoreRepositories.Location = new System.Drawing.Point(12, 81);
+            this.ignoreRepositories.Name = "ignoreRepositories";
+            this.ignoreRepositories.Size = new System.Drawing.Size(264, 23);
+            this.ignoreRepositories.TabIndex = 8;
+            this.ignoreRepositories.Visible = false;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(291, 188);
-            this.Controls.Add(this.sendToBandeijaBtn);
+            this.Controls.Add(this.ignoreRepositories);
+            this.Controls.Add(this.ignoreRepositorieCkb);
             this.Controls.Add(this.info2Lbl);
             this.Controls.Add(this.infoLbl);
             this.Controls.Add(this.runBtn);
@@ -167,10 +178,11 @@
         private Label infoLbl;
         private Label info2Lbl;
         private NotifyIcon notifyIconMain;
-        private Button sendToBandeijaBtn;
         private ContextMenuStrip cnmstrMain;
         private ToolStripMenuItem abrirAplicativoToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
         private ToolStripMenuItem rodarUltimoExpurgoToolStripMenuItem;
+        private CheckBox ignoreRepositorieCkb;
+        private TextBox ignoreRepositories;
     }
 }

@@ -16,8 +16,15 @@ namespace BinKiller_windowsApp
             ConfigureFiles();
             UpdatePathList();
             UpdateComboBoxPaths();
+            ignoreRepositorieCkb.Checked = false;
+            ignoreRepositories.Enabled = false;
             directioriesRemoved = 0;
             cnmstrMain.Items[1].Enabled = false;
+            if(DateTime.Now.DayOfWeek == DayOfWeek.Friday)
+            {
+                SoundPlayer player = new SoundPlayer(Properties.Resources.vesperadesexta);
+                player.Play();
+            }
         }
 
         private void runBtn_Click(object sender, EventArgs e)
@@ -215,6 +222,17 @@ namespace BinKiller_windowsApp
                 fs.Close();      
             }
         }
+
+        #region EVENTS
+        private void ignoreRepositorieCkb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ignoreRepositorieCkb.Checked)
+                ignoreRepositories.Enabled = true;
+            else
+                ignoreRepositories.Enabled = false;
+        }
+
+        #endregion
 
     }
 }

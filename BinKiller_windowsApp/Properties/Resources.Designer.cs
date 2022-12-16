@@ -87,5 +87,14 @@ namespace BinKiller_windowsApp.Properties {
                 return ResourceManager.GetStream("succes", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream vesperadesexta {
+            get {
+                return ResourceManager.GetStream("vesperadesexta", resourceCulture);
+            }
+        }
     }
 }
